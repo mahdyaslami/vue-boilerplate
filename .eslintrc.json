@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "vue/setup-compiler-macros": true
     },
     "extends": [
         "plugin:vue/vue3-essential",
@@ -28,10 +29,7 @@
                 "functions": "never"
             }
         ],
-        "eqeqeq": [
-            "error",
-            "smart"
-        ],
+        "eqeqeq": "off",
         "func-names": "off",
         "global-require": "off",
         "import/extensions": [
@@ -52,12 +50,25 @@
             "warn",
             120
         ],
-        "no-param-reassign": "off",
+        "no-console": "warn",
+        "no-debugger": "warn",
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
         "no-plusplus": "off",
         "no-return-assign": "off",
+        "no-undef": "warn",
         "no-underscore-dangle": "off",
-        "vue/no-parsing-error": "off",
+        "no-unused-vars": "warn",
+        "no-use-before-define": "off",
         "prefer-destructuring": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
         "radix": "off",
         "semi": [
             "warn",
@@ -87,6 +98,7 @@
             }
         ],
         "vue/multi-word-component-names": "off",
-        "vue/no-multiple-template-root": "off"
+        "vue/no-multiple-template-root": "off",
+        "vue/no-parsing-error": "off"
     }
 }
