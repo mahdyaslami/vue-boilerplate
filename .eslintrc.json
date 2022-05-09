@@ -28,7 +28,10 @@
                 "functions": "never"
             }
         ],
-        "eqeqeq": "off",
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
         "func-names": "off",
         "global-require": "off",
         "import/extensions": [
