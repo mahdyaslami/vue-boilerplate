@@ -18,5 +18,64 @@
         "vue"
     ],
     "rules": {
+        "comma-dangle": [
+            "warn",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "never",
+                "exports": "never",
+                "functions": "never"
+            }
+        ],
+        "eqeqeq": "off",
+        "func-names": "off",
+        "global-require": "off",
+        "import/extensions": [
+            "warn",
+            "never"
+        ],
+        "import/no-dynamic-require": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "indent": [
+            "warn",
+            4,
+            {
+                "ignoreComments": true
+            }
+        ],
+        "max-len": [
+            "warn",
+            120
+        ],
+        "no-param-reassign": "off",
+        "no-plusplus": "off",
+        "no-return-assign": "off",
+        "no-underscore-dangle": "off",
+        "vue/no-parsing-error": "off",
+        "prefer-destructuring": "off",
+        "radix": "off",
+        "semi": [
+            "warn",
+            "never"
+        ],
+        "vue/html-indent": [
+            "warn",
+            4
+        ],
+        "vue/max-attributes-per-line": [
+            "error",
+            {
+                "singleline": {
+                    "max": 2
+                },
+                "multiline": {
+                    "max": 1
+                }
+            }
+        ],
+        "vue/multi-word-component-names": "off",
+        "vue/no-multiple-template-root": "off"
     }
 }
