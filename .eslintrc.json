@@ -18,6 +18,22 @@
     "plugins": [
         "vue"
     ],
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    [
+                        "@",
+                        "./src/"
+                    ]
+                ],
+                "extensions": [
+                    ".js",
+                    ".vue"
+                ]
+            }
+        }
+    },
     "rules": {
         "comma-dangle": [
             "warn",
