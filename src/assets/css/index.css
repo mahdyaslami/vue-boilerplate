@@ -1,6 +1,6 @@
+@import url(./color-variables.css);
+@import url(./typography.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url(./color-variables.css);
-@import url(./typography.css);
