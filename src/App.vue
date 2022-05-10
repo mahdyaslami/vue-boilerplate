@@ -9,8 +9,12 @@ import HelloWorld from '@/components/HelloWorld'
         <img
             alt="Vue logo"
             src="./assets/logo.png"
+            class="mx-auto"
         >
         <hello-world msg="Hello Vue 3 + Vite" />
+        <h1 class="text-3xl font-bold underline">
+            Hello tailwind!
+        </h1>
     </div>
 </template>
 
