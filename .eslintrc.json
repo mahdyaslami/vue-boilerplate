@@ -113,7 +113,12 @@
                 }
             }
         ],
-        "vue/multi-word-component-names": "off",
+        "vue/multi-word-component-names": [
+            "warn",
+            {
+                "ignores": []
+            }
+        ],
         "vue/no-multiple-template-root": "warn",
         "vue/no-parsing-error": "off"
     }
