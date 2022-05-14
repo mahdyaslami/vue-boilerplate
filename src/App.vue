@@ -1,20 +1,26 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from '@/components/HelloWorld'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
 
 <template>
     <div>
-        <img
-            alt="Vue logo"
-            src="./assets/logo.png"
-            class="mx-auto"
-        >
-        <hello-world msg="Hello Vue 3 + Vite" />
-        <h1 class="text-3xl font-bold underline">
-            Hello tailwind!
-        </h1>
+        <div class="router-link-wrapper">
+            <div>
+                active route: {{ route.name }}
+            </div>
+
+            <router-link to="/">
+                Go to Landing
+            </router-link>
+
+            <router-link to="/blog">
+                Go to Blog
+            </router-link>
+        </div>
+
+        <router-view />
     </div>
 </template>
 
@@ -26,5 +32,9 @@ import HelloWorld from '@/components/HelloWorld'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.router-link-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 </style>
